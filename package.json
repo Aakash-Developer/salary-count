@@ -1,8 +1,8 @@
 {
   "name": "salary-count",
   "version": "1.0.0",
-  "description": "",
   "type": "module",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon npx babel-node index.js",

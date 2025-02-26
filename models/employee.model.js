@@ -13,8 +13,23 @@ const EmployeeSchema = mongoose.Schema({
     acNo: String,
     bankName: String,
     branchName: String,
-    ifscCode: string,
+    ifscCode: String,
+  },
+  isActive: {
+    type: Boolean,
+    default: true,
+  },
+  workingHours: 8,
+  leaveBalance: {
+    cl: {
+      type: Number,
+      default: 0,
+    },
+    pl: {
+      type: Number,
+      default: 0,
+    },
   },
 });
 
-export const EmployeeModel = mongoose.model("employee", EmployeeSchema);
+export const EmployeeModel = mongoose.model("Employee", EmployeeSchema);

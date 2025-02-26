@@ -9,6 +9,16 @@ const salarySchema = new mongoose.Schema({
   sickLeaves: Number,
   deductions: Number,
   incentives: Number,
+  daysAddon: Number,
+  month: {
+    type: Number,
+    enum: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
+    require: true,
+  },
+  year: {
+    type: Number,
+    require: true,
+  },
   overtime: { days: Number, hours: Number, minutes: Number },
 });
 
